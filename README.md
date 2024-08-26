@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Aqui está um exemplo de um arquivo `README.md` para o seu projeto Next.js, incluindo instruções sobre como iniciar o projeto e preencher o arquivo `client_secret.json`:
 
-## Getting Started
+````markdown
+# Projeto Next.js
 
-First, run the development server:
+Bem-vindo ao projeto Next.js! Este README fornecerá as instruções necessárias para iniciar o projeto e configurar o arquivo de credenciais.
+
+## Índice
+
+-   [Pré-requisitos](#pré-requisitos)
+-   [Configuração do Projeto](#configuração-do-projeto)
+-   [Executando o Projeto](#executando-o-projeto)
+-   [Configuração do `client_secret.json`](#configuração-do-client_secretjson)
+
+## Pré-requisitos
+
+Certifique-se de ter as seguintes ferramentas instaladas:
+
+-   [Node.js](https://nodejs.org/) (versão LTS recomendada)
+-   [npm](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/) (gerenciador de pacotes)
+
+## Configuração do Projeto
+
+1. **Clone o Repositório**
+
+    Primeiro, clone o repositório para o seu ambiente local:
+
+    ```bash
+    git clone https://github.com/usuario/nome-do-repositorio.git
+    cd nome-do-repositorio
+    ```
+````
+
+2. **Instale as Dependências**
+
+    Navegue até o diretório do projeto e instale as dependências necessárias:
+
+    ```bash
+    npm install
+    ```
+
+    ou, se estiver usando Yarn:
+
+    ```bash
+    yarn install
+    ```
+
+## Executando o Projeto
+
+Para iniciar o servidor de desenvolvimento, execute o seguinte comando:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ou, se estiver usando Yarn:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+O projeto estará disponível em `http://localhost:3000` por padrão.
 
-## Learn More
+## Configuração do `client_secret.json`
 
-To learn more about Next.js, take a look at the following resources:
+Este projeto requer um arquivo de credenciais para funcionar corretamente. Siga os passos abaixo para configurar o `client_secret.json`:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1.  **Crie o Arquivo `client_secret.json`**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    Copie o arquivo `client_secret_example.json` e renomeie-o para `client_secret.json`.
 
-## Deploy on Vercel
+    ```bash
+    cp client_secret_example.json client_secret.json
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  **Crie ou gere o Arquivo `client_secret.json`**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+        Crie ou gere um arquivo `client_secret.json` e insira suas credenciais. As informações devem ser baseadas no arquivo `client_secret_example.json`.
+

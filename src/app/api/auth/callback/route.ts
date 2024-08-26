@@ -50,7 +50,7 @@ export async function GET(request: Request) {
 
 		const cookie = cookies();
 		cookie.set('access_token', data.access_token, {
-			maxAge: 86400,
+			maxAge: 3600,
 			path: '/',
 			secure: process.env.NODE_ENV === 'production',
 		});

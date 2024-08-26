@@ -8,10 +8,13 @@ import {
 	Menu,
 	MenuItem,
 	Avatar,
+	Link,
+	Typography,
 } from '@mui/material';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import useAuthStore from '@/store/authStore';
+import { GoHome } from 'react-icons/go';
 
 const Navigation = () => {
 	const router = useRouter();
@@ -43,12 +46,17 @@ const Navigation = () => {
 		!shouldHideAppBar && (
 			<AppBar position="static" className="bg-blue-800">
 				<Toolbar>
-					<Image
-						src="/logo-site.png"
-						alt="logo-mega-news"
-						width={50}
-						height={50}
-					/>
+					<Typography variant="h5">MegaCursos</Typography>
+					{pathname !== '/home' && (
+						<Link
+							href="/home"
+							className="flex items-center ml-9"
+							color="inherit"
+							underline="none"
+						>
+							<GoHome size={32} />
+						</Link>
+					)}
 					<div style={{ flexGrow: 1 }} />
 					<IconButton onClick={handleClick} color="inherit">
 						<Avatar />
