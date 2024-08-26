@@ -1,22 +1,20 @@
 'use client';
 
-import DefaultButton from '@/components/Button';
+import DefaultButton from '@/components/DefaultButton';
+import { Typography } from '@mui/material';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
 export default function Home() {
 	const router = useRouter();
 	return (
-		<main className="flex min-h-screen flex-col gap-8 items-center p-24">
-			<Image
-				src="/logo-site.png"
-				alt="logo-mega-news"
-				width={200}
-				height={200}
-			/>
+		<main className="flex min-h-screen flex-col gap-8 items-center justify-center p-24 bg-[url('/bg.jpg')] bg-cover bg-center">
+			<Typography variant="h1" className="font-bold text-blue-800">
+				MegaCursos
+			</Typography>
 			<h1 className="text-3xl font-bold text-center text-blue-900">
-				Bem-vindo à MegaCursos <br /> O Seu Portal para Aprender e
-				Crescer!
+				Seja bem vindo ao seu Portal para Aprender e Crescer
+				profissionamente!
 			</h1>
 			<p className="text-sm w-7/12 text-center">
 				Na MegaCursos, acreditamos que o aprendizado é a chave para o
@@ -30,13 +28,6 @@ export default function Home() {
 					onClick={() => router.push('user/login')}
 				>
 					Fazer Login
-				</DefaultButton>
-				<span>Ou</span>
-				<DefaultButton
-					variant="outlined"
-					onClick={() => router.push('user/register')}
-				>
-					Cadastre-se
 				</DefaultButton>
 			</div>
 		</main>

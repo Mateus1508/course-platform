@@ -54,7 +54,10 @@ const Course = () => {
 			) : (
 				<div className="flex flex-col gap-4">
 					<Typography variant="h4" gutterBottom>
-						Assistindo ao vídeo - {selectedVideo?.title}
+						Assistindo ao vídeo -{' '}
+						<span className="font-bold text-blue-800">
+							{selectedVideo?.title}
+						</span>
 					</Typography>
 					{selectedVideo && (
 						<iframe

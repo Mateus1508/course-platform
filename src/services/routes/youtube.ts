@@ -9,7 +9,7 @@ export class YoutubeMethods {
 					part: 'snippet',
 					q: query,
 					type: 'playlist',
-					maxResults: 5,
+					maxResults: 10,
 					order: order,
 				},
 			});

@@ -12,7 +12,7 @@ const DefaultButton = ({ children, ...props }: Props) => {
 				props.variant === 'contained'
 					? 'bg-blue-800 hover:bg-blue-600'
 					: 'border-blue-800 hover:border-blue-600 hover:text-blue-500'
-			} min-w-40`}
+			} min-w-40 gap-2`}
 			size="large"
 		>
 			{children}

@@ -21,7 +21,7 @@ const VideoItem = ({ video, onClick, index, isSelected }: VideoItemProps) => {
 		<ListItem
 			disablePadding
 			className={`${
-				isSelected ? 'border bg-blue-100' : ''
+				isSelected ? 'border-2 bg-blue-100' : ''
 			} bg-blue-100 border-blue-800 rounded hover:bg-blue-200`}
 		>
 			<ListItemButton onClick={() => onClick(video.id)} className="gap-3">
