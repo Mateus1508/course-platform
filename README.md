@@ -59,19 +59,56 @@ O projeto estará disponível em `http://localhost:3000` por padrão.
 
 ## Configuração do `client_secret.json`
 
-Este projeto requer um arquivo de credenciais para funcionar corretamente. Siga os passos abaixo para configurar o `client_secret.json`:
+Claro! Aqui está um resumo de como gerar o arquivo de credenciais `client_secret.json` no Google:
 
-1. **Crie o Arquivo `client_secret.json`**
+---
 
-    Copie o arquivo `client_secret_example.json` e renomeie-o para `client_secret.json`:
+## Configuração do `client_secret.json`
 
-    ```bash
-    cp client_secret_example.json client_secret.json
+Este projeto requer um arquivo de credenciais para funcionar corretamente. Siga os passos abaixo para gerar e configurar o `client_secret.json`:
+
+1. **Crie um Projeto no Google Cloud**
+
+    - Acesse o [Google Cloud Console](https://console.cloud.google.com/).
+    - Clique em **Select a project** no topo da página e, em seguida, **New Project**.
+    - Dê um nome ao projeto e clique em **Create**.
+
+2. **Ative a API Necessária**
+
+    - No menu de navegação do Google Cloud Console, vá para **APIs & Services** > **Library**.
+    - Pesquise e selecione a API do YouTube.
+    - Clique em **Enable** para ativar a API.
+
+3. **Configure o OAuth Consent Screen**
+
+    - No menu de navegação, vá para **APIs & Services** > **OAuth consent screen**.
+    - Selecione **External** e clique em **Create**.
+    - Complete as informações obrigatórias e clique em **Save and Continue** até finalizar a configuração.
+
+4. **Crie Credenciais**
+
+    - No menu de navegação, vá para **APIs & Services** > **Credentials**.
+    - Clique em **Create Credentials** e selecione **OAuth 2.0 Client IDs**.
+    - Escolha **Web application** como tipo de aplicativo.
+    - Em **Authorized redirect URIs**, adicione os URIs de redirecionamento necessários (se aplicável).
+    - Será necessário configurar esses dois itens exatamente dessa forma.
+
+    ```json
+    {
+    	"redirect_uris": ["http://localhost:3000/api/auth/callback"],
+    	"javascript_origins": ["http://localhost:3000"]
+    }
     ```
 
-2. **Preencha o Arquivo `client_secret.json`**
+    - Clique em **Create**.
 
-    Abra o arquivo `client_secret.json` e insira suas credenciais. As informações devem ser baseadas no formato e nas chaves do arquivo `client_secret_example.json`.
+5. **Baixe o Arquivo de Credenciais**
 
-    **Observação:** Certifique-se de que o arquivo `client_secret.json` esteja corretamente configurado com as credenciais necessárias para o funcionamento do projeto.
+    - Após criar as credenciais, você verá um popup com o `client_id` e `client_secret`.
+    - Clique em **Download** para obter o arquivo JSON. Renomeie-o para `client_secret.json`.
+
+6. **Preencha o Arquivo `client_secret.json`**
+
+    - Abra o arquivo `client_secret.json` e insira as informações conforme as credenciais fornecidas pelo Google.
+    - Certifique-se de que o arquivo esteja corretamente configurado com as credenciais necessárias para o funcionamento do projeto.
 
