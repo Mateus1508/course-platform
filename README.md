@@ -59,12 +59,6 @@ O projeto estará disponível em `http://localhost:3000` por padrão.
 
 ## Configuração do `client_secret.json`
 
-Claro! Aqui está um resumo de como gerar o arquivo de credenciais `client_secret.json` no Google:
-
----
-
-## Configuração do `client_secret.json`
-
 Este projeto requer um arquivo de credenciais para funcionar corretamente. Siga os passos abaixo para gerar e configurar o `client_secret.json`:
 
 1. **Crie um Projeto no Google Cloud**
