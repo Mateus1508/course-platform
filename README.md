@@ -1,9 +1,6 @@
-Aqui está um exemplo de um arquivo `README.md` para o seu projeto Next.js, incluindo instruções sobre como iniciar o projeto e preencher o arquivo `client_secret.json`:
-
-````markdown
 # Projeto Next.js
 
-Bem-vindo ao projeto Next.js! Este README fornecerá as instruções necessárias para iniciar o projeto e configurar o arquivo de credenciais.
+Bem-vindo ao projeto Course platform! Este README fornece as instruções necessárias para iniciar o projeto e configurar o arquivo de credenciais.
 
 ## Índice
 
@@ -29,7 +26,6 @@ Certifique-se de ter as seguintes ferramentas instaladas:
     git clone https://github.com/usuario/nome-do-repositorio.git
     cd nome-do-repositorio
     ```
-````
 
 2. **Instale as Dependências**
 
@@ -65,15 +61,17 @@ O projeto estará disponível em `http://localhost:3000` por padrão.
 
 Este projeto requer um arquivo de credenciais para funcionar corretamente. Siga os passos abaixo para configurar o `client_secret.json`:
 
-1.  **Crie o Arquivo `client_secret.json`**
+1. **Crie o Arquivo `client_secret.json`**
 
-    Copie o arquivo `client_secret_example.json` e renomeie-o para `client_secret.json`.
+    Copie o arquivo `client_secret_example.json` e renomeie-o para `client_secret.json`:
 
     ```bash
     cp client_secret_example.json client_secret.json
     ```
 
-2.  **Crie ou gere o Arquivo `client_secret.json`**
+2. **Preencha o Arquivo `client_secret.json`**
 
-        Crie ou gere um arquivo `client_secret.json` e insira suas credenciais. As informações devem ser baseadas no arquivo `client_secret_example.json`.
+    Abra o arquivo `client_secret.json` e insira suas credenciais. As informações devem ser baseadas no formato e nas chaves do arquivo `client_secret_example.json`.
+
+    **Observação:** Certifique-se de que o arquivo `client_secret.json` esteja corretamente configurado com as credenciais necessárias para o funcionamento do projeto.
 
